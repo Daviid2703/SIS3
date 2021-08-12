@@ -2,20 +2,107 @@
   <html>
     <head>
       <meta charset="utf-8" lang="sl-SI" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
       <link rel="stylesheet" type="text/css" href="cssFolder/index.css">
+
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      
     </head> 
 
+    <!-- Top bar for login/registration + PageName -->
     <body>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">PetHotel</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </nav>
 
-      <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+      <!-- Main part of the body -->
+      <div class="container">
+        <div class="row pt-1 pb-1">
+          <div class="col-lg-12">
+            <h4 class="text-center">Carousel with Three input search</h4>
+            <h6 class="text-center">awesome responsive image slider with a search bar</h6>
+          </div>
+        </div>
       </div>
 
+      <!-- SLides (carousel) images -->
+      <section>
+        <div id="indexCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="7000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://pbs.twimg.com/media/EGHYvttU4AAYKb7?format=jpg&name=large" class="d-block w-100" alt="...">
+            </div>
 
-      <div class = "main">
-        <p>Hello</p>
-      </div>
+            <div class="carousel-item">
+                <img src="https://pbs.twimg.com/media/EGHYvtkUcAAuc8T?format=jpg&name=large" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://pbs.twimg.com/media/EGHYvtjU0AAO8w1?format=jpg&name=large" class="d-block w-100" alt="...">
+            </div>
+
+          </div>
+          <!-- End of images -->
+
+          <!-- Controls for left right-->
+          <a class="carousel-control-prev" href="#indexCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" href="#indexCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+          <!-- End of buttons -->
+        </div>
+      </section>
+      <!-- End of carousel-->
+
+
+      <section class="search-sec">
+        <div class="container">
+          <form action="#" method="post" novalidate="novalidate">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="row justify-content-between">
+                  <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                    <input type="text" class="form-control search-slt" placeholder="Enter Pickup City">
+                  </div>
+<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                    <input type="date">
+                    <input type="date">
+                    
+                  </div>
+
+
+                  <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                    <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                  </div>
+                </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
     </body>  
-  </html>  
+  </html>
+      

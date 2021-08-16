@@ -1,0 +1,12 @@
+.section{
+  margin-top: 20px;
+}
+
+.gradient-custom-3 {
+  background: linear-gradient(90deg, #99e6ff, #ffb3ff);
+  background-attachment: fixed;
+}
+
+.gradient-custom-4 {
+  background: linear-gradient(135deg, #99e6ff, #ffb3ff);
+}

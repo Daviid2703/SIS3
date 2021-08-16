@@ -1,6 +1,6 @@
-/*search box css start here*/
 .search-sec{
     padding: 1.7rem;
+    margin-bottom: 20px;
 }
 .search-slt{
     display: block;
@@ -9,17 +9,15 @@
     line-height: 1.5;
     color: #55595c;
     background-color: #fff;
-    background-image: none;
     border: 1px solid #ccc;
-    height: calc(3rem + 2px) !important;
-    border-radius:0;
+    height: 3rem;
 }
 .wrn-btn{
     width: 100%;
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
-    height: calc(3rem + 2px) !important;
+    height: 3rem !important;
     border-radius:0;
 }
 
